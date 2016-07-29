@@ -85,6 +85,8 @@
                           <h3>時間：7/30（六） 8:20 - 22:00</h3>
                           <h3>地點：桃園</h3>
                           <h3>性質：職業，國際，團務</h3>
+                          <a id="eventButton1" type="button" class="btn btn-success">
+                              當日流程</a>
                   </div>
               </div>
 
@@ -150,8 +152,69 @@
 
           </div>
 
-
       </div>
+
+
+      <div id="eventModal1" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+                <button id="eventModalCloseBtn1" type="button" class="close">
+                    &times;</button>
+                <h3 class="modal-title">VR(Virtual Reality) + 桃園一日遊 流程</h3>
+            </div>
+
+            <div class="modal-body">
+              <p>
+                8:30-8:50	註冊聯誼,台北車站集合,吃早餐(自備)<br>
+                08:50~08:59	找月台入口<br>
+                09:00~09:36	上火車補眠(1139號列車)<br>
+                09:36~10:00	步行至老街溪河川教育中心(950m)<br>
+                10:00~11:00	老街溪河川教育中心(Mission 1)<br>
+                10:00~11:30	搭計程車或uber前往鉅豐賽車場<br>
+                11:30~11:50	主席致詞,準備時間,遊戲說明<br>
+                11:50~12:20	不能輸呀阿斯拉(Mission 2)<br>
+                12:20~12:50	搭Uber往華泰outlet<br>
+                12:50~14:50	華泰outlet午餐 & 失心瘋購物<br>
+                14:50~15:00	緩衝時間,等失心瘋的人<br>
+                15:00~15:30	搭Uber往FU Vision<br>
+                15:30~15:45	老闆解說~<br>
+                15:45~15:50	VR應用 & Mission 3規則說明<br>
+                15:50~16:50	VR時間part 1<br>
+                16:50~17:00	休息一下<br>
+                17:00~17:50	VR時間part 2 (Mission 3)<br>
+                17:50~18:20	前往中原夜市(Uber)<br>
+                18:20~18:30	Mission 4說明<br>
+                18:30~20:10	南區食字路口(Mission 4)<br>
+                20:10~20:40	主席講評,秘書時間,大合照,結算,獎懲<br>
+                20:40~21:01	Go To Train Station<br>
+                21:01~21:50	上火車補眠(1258號區間車)<br>
+                <hr>
+                <h3>注意事項</h3>
+                集合時間: 7/30早上8:30~8:50<br>
+                集合地點: 台北車站東二門內吹的到冷氣處<br>
+                活動費用: 集合時繳交1000$(含活動費用及交通費,不含三餐,團費補助需待母社撥款後再退還)<br>
+                活動服裝: 團服+盡量穿長褲為主<br>
+                活動地點: 老溪街河川教育中心,鉅豐卡丁車場,華泰outlet,桃園內壢FU Vision,中原夜市<br>
+                活動內容: 分組藍綠鬥爭<br>
+                Mission 1: 老溪街河川教育中心<br>
+                1.「打彈珠」 2.「時空隧道木頭人」<br>
+                Mission 2: 鉅豐賽車場<br>
+                「跑跑卡丁車」<br>
+                Mission 3: 虛擬對決，實境PK<br>
+                「Hover Junkers」<br>
+                Mission 4: 中原夜市-食字路口<br>
+                1.「連線九宮格」 2.「終極密碼」<br>
+                搶分題:「神鬼奇航」<br>
+                攜帶物品建議: 防曬乳、防寒風衣外套、雨具、扇子、太陽眼鏡、隱形眼鏡(視個人需求)、帽子、水、飽滿的精神<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
     </div>  <!-- End of container-->
 
 
@@ -208,11 +271,6 @@
 
         $(document).ready(function() {
 
-          //change the integers below to match the height of your upper dive, which I called
-          //banner.  Just add a 1 to the last number.  console.log($(window).scrollTop())
-          //to figure out what the scroll position is when exactly you want to fix the nav
-          //bar or div or whatever.  I stuck in the console.log for you.  Just remove when
-          //you know the position.
           $(window).scroll(function () {
 
             var main_img = $('#main_img'),
@@ -228,6 +286,20 @@
               document.getElementById("content").style.padding = "0px 0px 0px 0px";
             }
           });
+
+          var eventButton1 = $('#eventButton1');
+          var eventModal1 = $('#eventModal1');
+          var eventModalCloseBtn1 = $('#eventModalCloseBtn1');
+
+          function showEventModal()    {
+              eventModal1.modal("show");
+          }
+          function hideEventModal()    {
+              eventModal1.modal("hide");
+          }
+          eventButton1.on('click', showEventModal);
+          eventModalCloseBtn1.on('click', hideEventModal);
+
         });
     </script>
 </body>
