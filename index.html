@@ -77,32 +77,49 @@
 
               <div class="row row-content">
                   <div class="col-xs-4 col-sm-3 col-sm-push-1">
-                          <img class="img-thumbnail"
-                           src="img/events/VR.jpg" width="200" alt="VR">
-                  </div>
-                  <div class="col-xs-8 col-sm-7 col-sm-push-1">
-                          <h3 class="media-heading"><b>VR(Virtual Reality) + 桃園一日遊</b></h3>
-                          <h3>時間：7/30（六） 8:20 - 22:00</h3>
-                          <h3>地點：桃園</h3>
-                          <h3>性質：職業，國際，團務</h3>
-                  </div>
-              </div>
-
-
-              <div class="row row-content">
-                  <div class="col-xs-4 col-sm-3 col-sm-push-1">
-                          <img class="img-thumbnail"
-                           src="img/events/stray_dog.jpg" width="200" alt="VR">
+                      <img class="img-thumbnail"
+                       src="img/events/stray_dog.jpg" width="200" alt="VR">
                   </div>
                   <div class="col-xs-8 col-sm-7 col-sm-push-1">
                       <h3 class="media-heading"><b>流浪動物之家志工</b></h3>
-                      <h3>時間：8/6（六） 14:00</h3>
+                      <h3>時間：9/24（六） 14:00</h3>
                       <h3>地點：板橋流浪之家</h3>
                       <h3>性質：社區</h3>
                       <a id="eventButton1" type="button" class="btn btn-success">
                           當日流程</a>
                   </div>
               </div>
+
+
+              <div class="row row-content">
+                  <div class="col-xs-4 col-sm-3 col-sm-push-1">
+                      <img class="img-thumbnail"
+                       src="img/events/beach.jpg" width="200" alt="VR">
+                  </div>
+                  <div class="col-xs-8 col-sm-7 col-sm-push-1">
+                      <h3 class="media-heading"><b>南區社會服務 - 淨灘暨扶輪家庭一日行</b></h3>
+                      <h3>時間：10/2（六） 8:30 - 18:00</h3>
+                      <h3>集合地點：行天宮行政大樓</h3>
+                      <h3>性質：社區</h3>
+                      <a id="eventButton2" type="button" class="btn btn-success">
+                          當日流程</a>
+                  </div>
+              </div>
+
+
+              <div class="row row-content">
+                  <div class="col-xs-4 col-sm-3 col-sm-push-1">
+                      <img class="img-thumbnail"
+                       src="img/events/arena.jpg" width="200" alt="VR">
+                  </div>
+                  <div class="col-xs-8 col-sm-7 col-sm-push-1">
+                      <h3 class="media-heading"><b>仙角百老匯5 夢中的膨紗衫</b></h3>
+                      <h3>時間：10/14（五） 午場 13:30 - 15:30/ 晚場 19:00 - 21:00</h3>
+                      <h3>地點：臺北小巨蛋 (臺北市松山區南京東路四段2號)</h3>
+                      <h3>性質：社區</h3>
+                  </div>
+              </div>
+
 
             </div>
             <!-- End of events -->
@@ -171,15 +188,11 @@
 
                 服務地點：板橋區動物之家<br><br>
                 地址: 板橋區板城路28-1號<br><br>
-                各位集合時間地點：13：20亞東醫院捷運站二號出口<br><br>
-                P.s 當天大家集合請務必準時出發<br><br>
-
-                服務內容:<br>
-                因為是第一次做服務，我們人數較多，所以會影片欣賞跟參觀園區的方式為主進行，若要接觸貓狗，當天會安排<br><br>
 
                 會後會聚餐:<br>
-                【No Name】<br>
-                地址：新北市板橋區四川路2段76巷1號<br>
+                愛茶棧餐廳。 <br>
+                地址：新北市板橋區中山路一段50巷22號2樓 <br>
+                時間：下午5：00 <br>
 
                 <hr>
                 <h3>注意事項</h3>
@@ -203,6 +216,30 @@
 
                 ●開車及騎車：<br>
                 可從大門 [板城路] 進入動物之家裡面，設有停車場<br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div id="eventModal2" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+                <button id="eventModalCloseBtn2" type="button" class="close">
+                    &times;</button>
+                <h3 class="modal-title">南區社會服務 - 淨灘暨扶輪家庭一日行 流程</h3>
+            </div>
+
+            <div class="modal-body">
+              <p>
+                * 淨灘時間: 1000 ~1145 <br>
+                * 午餐暫訂1215 于 金山兄弟食堂 <br>
+                * 午餐後至附近景點: 青山瀑布健行，享受森林浴及呼吸芬多精 (單程約40分鐘)，增進扶輪家庭友誼 <br>
+                * 預計1800 前回到臺北<br>
+                * 淨灘地點: 麟山鼻漁港旁沙灘<br>
               </p>
             </div>
           </div>
@@ -286,14 +323,28 @@
           var eventModal1 = $('#eventModal1');
           var eventModalCloseBtn1 = $('#eventModalCloseBtn1');
 
-          function showEventModal()    {
+          function showEventModal1()    {
               eventModal1.modal("show");
           }
-          function hideEventModal()    {
+          function hideEventModal1()    {
               eventModal1.modal("hide");
           }
-          eventButton1.on('click', showEventModal);
-          eventModalCloseBtn1.on('click', hideEventModal);
+          eventButton1.on('click', showEventModal1);
+          eventModalCloseBtn1.on('click', hideEventModal1);
+
+
+          var eventButton2 = $('#eventButton2');
+          var eventModal2 = $('#eventModal2');
+          var eventModalCloseBtn2 = $('#eventModalCloseBtn2');
+
+          function showEventModal2()    {
+              eventModal2.modal("show");
+          }
+          function hideEventModal2()    {
+              eventModal2.modal("hide");
+          }
+          eventButton2.on('click', showEventModal2);
+          eventModalCloseBtn2.on('click', hideEventModal2);
 
         });
     </script>
